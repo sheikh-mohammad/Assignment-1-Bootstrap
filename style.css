@@ -44,20 +44,20 @@ nav {
     height: 100vh;
 }
 
-.hero-section .col-12:nth-child(1) {
+.hero-section :nth-child(1) {
     background-color: #FFDDB5;
 }
 
-.hero-section .col-12:nth-child(1) h1 {
+.hero-section :nth-child(1) h1 {
     font-family: "Josefin";
     font-size: 55px;
 }
 
-.hero-section .col-12:nth-child(1) span {
+.hero-section :nth-child(1) span {
     color: var(--primary-color);
 }
 
-.hero-section .col-12:nth-child(1) button::after {
+.hero-section :nth-child(1) button::after {
     content: "";
     width: 101%;
     transform: scaleX(0);
@@ -75,18 +75,18 @@ nav {
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
 
-.hero-section .col-12:nth-child(1) button {
+.hero-section :nth-child(1) button {
     background-color: var(--primary-color);
     z-index: 1;
     overflow: hidden;
     transition: color 0.4s linear;
 }
 
-.hero-section .col-12:nth-child(1) button:hover::after {
+.hero-section :nth-child(1) button:hover::after {
     transform: scaleX(1);
 }
 
-.services-section .services-head .col-12:nth-child(1) {
+.services-section .services-head :nth-child(1) {
     font-family: "Josefin";
 }
 
@@ -113,4 +113,48 @@ nav {
     transition: all .4s ease-out 0s;
     border: 1px solid transparent;
     box-shadow: 0px 15px 25px rgba(168, 96, 0, 0.1);
+}
+
+.intro-section h1, .intro-section h2{
+    font-family: "Josefin" !important;
+}
+
+.intro-section{
+    background-color: #FFE0BB;
+}
+
+.intro-section .col-12:nth-child(2){
+    background-color: white;
+}
+
+.plans-section{
+    padding: 120px 0px;
+    background-color: var(--primary-color);
+}
+
+.plans-body .card button::after {
+    content: "";
+    width: 101%;
+    transform: scaleX(0);
+    height: 101%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    z-index: -1;
+    border-radius: 0.375rem;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.plans-body .card button {
+    background-color: var(--primary-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.4s linear;
+}
+.plans-body .card button:hover::after {
+    transform: scaleX(1);
 }
