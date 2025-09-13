@@ -109,27 +109,28 @@ nav {
     transition: all .2s ease-out 0s;
 }
 
-.services-body .card:hover{
+.services-body .card:hover {
     transition: all .4s ease-out 0s;
     border: 1px solid transparent;
     box-shadow: 0px 15px 25px rgba(168, 96, 0, 0.1);
 }
 
-.intro-section h1, .intro-section h2{
+.intro-section h1,
+.intro-section h2 {
     font-family: "Josefin" !important;
 }
 
-.intro-section{
+.intro-section {
     background-color: #FFE0BB;
 }
 
-.intro-section .col-12:nth-child(2){
-    background-color: white;
+.intro-section .col-12:nth-child(2) {
+    background-color: rgb(247, 242, 242);
 }
 
-.plans-section{
+.plans-section {
     padding: 120px 0px;
-    background-color: var(--primary-color);
+    background: linear-gradient(to bottom, var(--primary-color) 50%, transparent 50%);
 }
 
 .plans-body .card button::after {
@@ -149,12 +150,53 @@ nav {
     transform-origin: 0 0;
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
+
 .plans-body .card button {
     background-color: var(--primary-color);
     z-index: 1;
     overflow: hidden;
     transition: color 0.4s linear;
 }
+
 .plans-body .card button:hover::after {
     transform: scaleX(1);
+}
+
+.plans-body .card:nth-child(2) {
+    box-shadow: 0px 15px 25px rgba(168, 96, 0, 0.1);
+}
+
+.plans-body .card:hover {
+    transition: all .4s ease-out 0s;
+    box-shadow: 0px 15px 25px rgba(168, 96, 0, 0.1);
+}
+
+.plans-body .card h1{
+    font-family: "Josefin";
+    color: var(--primary-color);
+}
+
+.features-section i{
+    color: var(--primary-color);
+}
+
+.features-section .list-group-item{
+    color: #010a44 !important;
+    transition: 0.5s;
+    font-family: "Josefin";
+}
+
+.features-section .list-group-item:hover{
+    color: var(--primary-color) !important;
+}
+
+.features-section h1{
+    font-family: "Josefin";
+    font-size: 46px;
+}
+
+.testinomials{
+    background-image: url(assets/images/testinomails/testinomial.png);
+    padding: 120px 0px;
+    background-attachment: fixed;
 }
