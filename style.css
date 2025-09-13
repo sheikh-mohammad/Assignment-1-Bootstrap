@@ -199,4 +199,32 @@ nav {
     background-image: url(assets/images/testinomails/testinomial.png);
     padding: 120px 0px;
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.quote-box h3{
+    font-family: "Josefin";
+}
+
+.blog-section{
+    padding: 120px 0px;
+}
+
+.blog-section .blog-head h1{
+    font-family: "Josefin";
+}
+
+.blog-body h4{
+    font-family: "Josefin";
+    cursor: pointer;
+    transition: all .3s ease-out 0s;
+}
+
+.blog-body h4:hover{
+    color: var(--primary-color);
+}
+
+.blog-body .card:hover h4{
+    text-decoration: underline;
 }
