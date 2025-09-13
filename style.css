@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Josefin";
+    src: url(assets/fonts/JosefinSans-Regular.ttf);
+}
+
+:root {
+    --primary-color: #ff9100;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+nav {
+    font-family: "Josefin" !important;
+}
+
+.navbar-nav .btn {
+    transition: all .3s ease-out 0s;
+    background-image: linear-gradient(to left, #FF9100, #df7e00, #FF9100);
+    background-position: right;
+    background-size: 200%;
+}
+
+.navbar-nav .btn:hover {
+    background-position: left;
+    background-image: linear-gradient(to left, #FF9100, #df7e00, #FF9100);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    transition: all .3s ease-out 0s;
+}
+
+.hero-section {
+    height: 100vh;
+}
+
+.hero-section .col-12:nth-child(1) {
+    background-color: #FFDDB5;
+}
+
+.hero-section .col-12:nth-child(1) h1 {
+    font-family: "Josefin";
+    font-size: 55px;
+}
+
+.hero-section .col-12:nth-child(1) span {
+    color: var(--primary-color);
+}
+
+.hero-section .col-12:nth-child(1) button::after {
+    content: "";
+    width: 101%;
+    transform: scaleX(0);
+    height: 101%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    z-index: -1;
+    border-radius: 0.375rem;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.hero-section .col-12:nth-child(1) button {
+    background-color: var(--primary-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.4s linear;
+}
+
+.hero-section .col-12:nth-child(1) button:hover::after {
+    transform: scaleX(1);
+}
+
+.services-section .col-12:nth-child(1){
+    font-family: "Josefin";
+}
+
+.services-section{
+    padding: 120px 0px;
+}
