@@ -172,31 +172,31 @@ nav {
     box-shadow: 0px 15px 25px rgba(168, 96, 0, 0.1);
 }
 
-.plans-body .card h1{
+.plans-body .card h1 {
     font-family: "Josefin";
     color: var(--primary-color);
 }
 
-.features-section i{
+.features-section i {
     color: var(--primary-color);
 }
 
-.features-section .list-group-item{
+.features-section .list-group-item {
     color: #010a44 !important;
     transition: 0.5s;
     font-family: "Josefin";
 }
 
-.features-section .list-group-item:hover{
+.features-section .list-group-item:hover {
     color: var(--primary-color) !important;
 }
 
-.features-section h1{
+.features-section h1 {
     font-family: "Josefin";
     font-size: 46px;
 }
 
-.testinomials{
+.testinomials {
     background-image: url(assets/images/testinomails/testinomial.png);
     padding: 120px 0px;
     background-attachment: fixed;
@@ -204,52 +204,72 @@ nav {
     background-position: center;
 }
 
-.quote-box h3{
+.quote-box h3 {
     font-family: "Josefin";
 }
 
-.blog-section{
+.blog-section {
     padding: 120px 0px;
 }
 
-.blog-section .blog-head h1{
+.blog-section .blog-head h1 {
     font-family: "Josefin";
 }
 
-.blog-body h4{
+.blog-body h4 {
     font-family: "Josefin";
     cursor: pointer;
     transition: all .3s ease-out 0s;
 }
 
-.blog-body h4:hover{
+.blog-body h4:hover {
     color: var(--primary-color);
 }
 
-.blog-body .card:hover h4{
+.blog-body .card:hover h4 {
     text-decoration: underline;
 }
 
-.footer-section{
+.footer-section {
     padding: 120px 0px;
     background-color: black;
     color: #949494;
 }
 
-.footer-section .list-group-item{
+.footer-section .list-group-item {
     color: #949494;
     width: 20px !important;
+    cursor: pointer;
+    transition: all .3s ease-out 0s;
 }
 
-.footer-section .list-group{
+.footer-section .list-group-item:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+
+.footer-section .list-group {
     width: 20px !important;
 }
 
-.footer-section h4{
+.footer-section h4 {
     color: var(--primary-color);
+    cursor: pointer;
 }
 
-.lower-footer i, .lower-footer a{
+.social-icons i {
+    transition: all .4s ease-out 0s;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: #FF9100;
+    position: relative;
+    top: -5px !important;
+}
+
+.lower-footer i,
+.lower-footer a {
     color: var(--primary-color);
 }
 
