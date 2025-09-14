@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top px-5 py-3 bg-white">
+    <nav class="navbar w-100 navbar-expand-lg sticky-top px-5 py-3 bg-white">
         <div class="container-fluid d-flex justify-content-between">
             <a class="navbar-brand" href="#"><img src="assets/images/logo/logo.png" alt=""></a>
             <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end" id="navbarSupportedContent">
@@ -48,15 +48,32 @@
             </div>
         </div>
     </nav>
+    <div class="menu position-fixed w-100 z-3">
+        <div id="menu-bar">
+            <button class="toggler">Menu <i class="fa-solid fa-bars"></i></button>
+        </div>
+        <ul>
+            <hr>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Case Study</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="top-icon">
+        <a href="#" class="text-white"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
     <div class="hero-section row w-100">
-        <div class="d-flex gap-3 px-5 align-items-start flex-column justify-content-center">
+        <div class="d-flex gap-3 px-5 align-items-start flex-column col-lg-6 col-12 justify-content-center">
             <span class="fs-6 z-1 text-uppercase fw-bold">We are new but doing great</span>
             <h1 class="fw-bold z-1">We give the power back to the user</h1>
             <p class="fs-5 fw-medium z-1">Content marketing is nothing but offering users value. <br> It is not just
                 about traffic minion customers.</p>
             <button class="btn fs-5 z-1 px-5 text-white fw-bold position-relative py-3">Explore Us</button>
         </div>
-        <img src="assets/images/hero/hero.png" alt="" class="d-none p-0 h-auto">
+        <img src="assets/images/hero/hero.png" alt="" class="col-lg-6 col-12 d-none d-lg-block p-0 h-auto">
     </div>
     <div class="services-section px-5 row w-100 d-flex flex-column align-items-center">
         <div class="services-head row">
@@ -202,7 +219,7 @@
         <div class="blog-head">
             <h1 class="fw-bold">Our latest blog</h1>
         </div>
-        <div class="blog-body d-flex flex-wrap justify-content-center align-items-center gap-4">
+        <div class="blog-body mt-5 d-flex flex-wrap justify-content-center align-items-center gap-4">
             <div class="card border-0 rounded-0" style="width: 23rem;">
                 <img src="assets/images/blogs/blog-1.png" class="card-img-top rounded-0" alt="...">
                 <div class="card-body">
@@ -229,6 +246,52 @@
             </div>
         </div>
     </div>
+    <div
+        class="footer-section position-relative px-5 w-100 d-flex justify-content-center align-items-center flex-column gap-5">
+        <div class="upper-footer row d-flex justify-content-center align-items-center">
+            <div class="col-lg-3 col-12 mt-5 d-flex flex-column justify-content-center align-items-start gap-5">
+                <img src="assets/images/footer/logo.png" alt="">
+                <p>Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning
+                    laboris nisi ufsit aliquip.</p>
+                <div class="social-icons fs-4 text-white">
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-linkedin"></i>
+                    <i class="fa-brands fa-square-pinterest"></i>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12 mt-5">
+                <h5 class="fw-bold text-white">Navigation</h5>
+                <ul class="list-group bg-transparent border-0 rounded-0 p-0 gap-4 mt-5">
+                    <li class="list-group-item bg-transparent border-0 p-0">Home</li>
+                    <li class="list-group-item bg-transparent border-0 p-0">About</li>
+                    <li class="list-group-item bg-transparent border-0 p-0">Services</li>
+                    <li class="list-group-item bg-transparent border-0 p-0">Blog</li>
+                    <li class="list-group-item bg-transparent border-0 p-0">Contact</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-12 mt-5 align-self-start">
+                <h5 class="fw-bold text-white">Services</h5>
+                <ul class="list-group bg-transparent border-0 rounded-0 p-0 gap-4 mt-5">
+                    <li class="list-group-item bg-transparent border-0 p-0">Blackforest</li>
+                    <li class="list-group-item bg-transparent border-0 p-0">Bodhubon</li>
+                    <li class="list-group-item bg-transparent border-0 p-0">Rongdhonu</li>
+                    <li class="list-group-item bg-transparent border-0 p-0">Meghrong</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-12 mt-5 align-self-start d-flex flex-column justify-content-center gap-4">
+                <h5 class="fw-bold text-white">Contact Us</h5>
+                <p>76/A, Green Lane, Dhanmondi, NYC</p>
+                <h4>+10 (78) 738-9083</h4>
+            </div>
+        </div>
+        <div class="lower-footer position-absolute bottom-0">
+            <p class="small text-center">Copyright &copy;2025 All rights reserved | This template is made with <i
+                    class="fa-solid fa-heart"></i>
+                by <a href="#" class="text-decoration-none">Colorlib</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
